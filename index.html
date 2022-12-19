@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>HTML Document</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="form">
+        <h1>QUIZ</h1>
+        <div class="quest-block">
+            <label for="quest1">What is your name?</label>
+            <input type="text" id="quest1" placeholder="Name">
+        </div>
+        <div class="quest-block">
+            <label for="quest2">How old are you?</label>
+            <input type="text" id="quest2" pattern="\d|[1-9]\d|1\d\d" placeholder="Age">
+        </div>
+        <div class="quest-block">
+            <label for="quest3">What is your main language?</label>
+            <div class="lang" id="lang-cont">
+                <select id="quest3">
+                    <option value="0">Russian</option>
+                    <option value="1">English</option>
+                    <option value="2">Spanish</option>
+                    <option value="3">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="quest-block" id="sports">
+            <label for="quest4">What are your favourite sports?</label>
+            <div class="sum-quest">
+                <input type="text" id="quest4" class="sportsInput" >
+                <input type="button" value="+" id="sportsButton">
+            </div>
+        </div>
+        <div class="submit">
+            <input type="button" value="Submit" id="submit">
+        </div>
+    </div>
+    <div class="results-container" id="results-container">
+        <div class="results" id="results">
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>

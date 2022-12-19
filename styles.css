@@ -1,0 +1,74 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    width: 30%;
+    background-color: aqua;
+    border: 1px solid black;
+    box-shadow: 1px 1px 35px black;
+}
+
+.quest-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-self: center;
+}
+
+.sum-quest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+input:invalid {
+    background-color: red;
+}
+.results-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 102%;
+    width: 100%;
+}
+
+.results {
+    background-color: white;
+    width: 50%;
+    height: 80%;
+    gap: 10px;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18pt;
+}
+
+
